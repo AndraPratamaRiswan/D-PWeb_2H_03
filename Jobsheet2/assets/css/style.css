@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #1d5b8a;
+    color: #5F0A87;
     text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ a:hover {
 
 /* Header & Navbar (Flexbox) */
 header {
-    background-color: #1d5b8a;
+    background-color: #5F0A87;
     color: #fff;
     padding: 1rem 1.5rem;
     display: flex;
@@ -64,13 +64,13 @@ section {
 
 section h2 {
     margin-bottom: 1rem;
-    color: #1d5b8a;
+    color: #5F0A87;
 }
 
 /* Kartu Statistik (CSS Grid) */
 main section:nth-of-type(2) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
@@ -83,14 +83,14 @@ main section:nth-of-type(2) article {
 
 main section:nth-of-type(2) article h3 {
     font-size: 0.95rem;
-    color: #55677a;
+    color: #c77cea;
     margin-bottom: 0.5rem;
 }
 
 main section:nth-of-type(2) article p {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #1d5b8a;
+    color: #5F0A87;
 }
 
 /* Tabel */
@@ -102,11 +102,11 @@ table {
 th, td {
     text-align: left;
     padding: 0.65rem 0.75rem;
-    border-bottom: 1px solid #e2e6ea;
+    border-bottom: 1px solid #e8d9ef;
 }
 
 thead {
-    background-color: #1d5b8a;
+    background-color: #5F0A87;
     color: #fff;
 }
 
@@ -115,7 +115,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background-color: #eef4fa;
+    background-color: #e8d9ef;
 }
 
 td button {
@@ -160,7 +160,7 @@ form select {
 }
 
 form button[type="submit"] {
-    background-color: #1d5b8a;
+    background-color: #5F0A87;
     color: #fff;
     border: none;
     padding: 0.6rem 1.5rem;
@@ -170,7 +170,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #164869;
+    background-color: #5F0A87;
 }
 
 /* Footer */
