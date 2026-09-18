@@ -54,6 +54,12 @@ main {
     padding: 0 1.5rem;
 }
 
+@media (min-width: 1400px) {
+    main {
+        max-width: 1200px;
+    }
+}
+
 section {
     background-color: #fff;
     border-radius: 8px;
@@ -201,14 +207,14 @@ footer {
 /* Responsive Breakpoints */
 
 /* Tablet ke bawah */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     main section:nth-of-type(2) {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Mobile */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     header {
         position: relative;
     }
@@ -240,5 +246,26 @@ footer {
     form input,
     form select {
         max-width: 100%;
+    }
+} */
+
+
+main section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 481px) {
+    main section:nth-of-type(2) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+    main section:nth-of-type(2) {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
