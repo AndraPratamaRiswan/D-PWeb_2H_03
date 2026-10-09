@@ -39,6 +39,7 @@ header h1 {
 header nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* OPSIONAL: menu boleh turun baris jika ruang tidak cukup */
     gap: 1.25rem;
 }
 
