@@ -1,0 +1,44 @@
+<?php
+// Opsional 2
+require_once __DIR__ . '/../includes/session.php';
+if (isset($_SESSION['user_id'])) {
+    header('Location: ../index.php');
+    exit;
+}
+
+$page_title = "Login";
+include __DIR__ . '/../includes/header.php';
+
+$flash = $_SESSION['flash'] ?? null;
+unset($_SESSION['flash']);
+?>
+        <section>
+            <h2>Login Petugas</h2>
+
+            <?php if ($flash): ?>
+                <p class="flash flash-<?php echo $flash['type']; ?>"><?php echo $flash['pesan']; ?></p>
+            <?php endif; ?>
+
+            <form method="post" action="proses_login.php">
+                <p>
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" name="username" required>
+                </p>
+                <p>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" required>
+                </p>
+                <!-- Opsional 2 -->
+                <p>
+                    <label>
+                        <input type="checkbox" name="remember_me" value="1">
+                        Ingat Saya (tetap login hingga 30 hari)
+                    </label>
+                </p>
+                <p>
+                    <button type="submit">Masuk</button>
+                </p>
+            </form>
+            <p>Belum punya akun? <a href="register.php">Daftar di sini</a></p>
+        </section>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
